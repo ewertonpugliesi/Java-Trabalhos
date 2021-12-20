@@ -1,0 +1,43 @@
+import javax.swing.*;
+import java.awt.*;
+
+public class LC_7 extends NFrame {
+	JSplitPane SP, SP1 ;
+	ImageIcon Im1, Im2, Im3 ;
+	JLabel Lx1, Lx2, Lx3 ;
+	JPanel P1, P2, P3;
+	
+	public LC_7() {
+		setTitle("Trabalhando com JSplitPane");
+		setResizable(false);
+		Im1 = new ImageIcon("C:/Users/Ton/Searches/Downloads/Desktop/Unip/4 semestre/ALPOO/12_set_2012/Imagens/Split_1.gif");
+		Im2 = new ImageIcon("C:/Users/Ton/Searches/Downloads/Desktop/Unip/4 semestre/ALPOO/12_set_2012/Imagens/Bebida_3.gif");
+		Im3 = new ImageIcon("C:/Users/Ton/Searches/Downloads/Desktop/Unip/4 semestre/ALPOO/12_set_2012/Imagens/Bauru_2.gif");
+		
+		Lx1 = new JLabel(Im1);
+		Lx3 = new JLabel(Im3);	
+		Lx2 = new JLabel(Im2);
+			
+		P1 = new JPanel();
+		P1.setBackground(new Color(96,207,255));
+		P1.add(Lx1);
+		
+		P2 = new JPanel();
+		P2.setBackground(new Color(96,207,255));
+		P2.add(Lx2);
+		
+		P3 = new JPanel();
+		P3.setBackground(new Color(96,207,255));
+		P3.add(Lx3);
+		
+		SP1 = new JSplitPane(JSplitPane.VERTICAL_SPLIT,P3,P2);
+		SP1.setDividerLocation(200);
+		SP = new JSplitPane(JSplitPane.HORIZONTAL_SPLIT,P1,SP1);
+		SP.setDividerLocation(80);
+		
+		getContentPane().add(SP);
+	}
+	public static void main (String arg[]) {
+		new LC_7().setVisible(true);
+	}
+}

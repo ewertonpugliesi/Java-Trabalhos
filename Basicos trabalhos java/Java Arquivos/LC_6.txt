@@ -1,0 +1,75 @@
+import javax.swing.*;
+import java.awt.*;
+import java.awt.event.*;
+
+public class LC_6 extends NFrame {
+	JTabbedPane TP ;
+	ImageIcon Im1, Im2, Im3, Im4,Im5,Im6 ;
+	JLabel Lx1, Lx2, Lx3,Lx4, Lx5, Lx6;
+	JPanel P1, P2,P3,P4,P5,P6 ;
+	
+	   public LC_6(){
+		setTitle("Trabalhando com JTabbedPane");
+		setBounds(250,200,425,300);
+		setResizable(true);
+		getContentPane().setBackground(Color.red);
+		Im1 = new ImageIcon("C:/Users/Ton/Searches/Downloads/Desktop/Unip/4 semestre/ALPOO/12_set_2012/Imagens/Hot_Dog_2.gif");
+		Im2 = new ImageIcon("C:/Users/Ton/Searches/Downloads/Desktop/Unip/4 semestre/ALPOO/12_set_2012/Imagens/Churrasco_2.gif");
+		Im3 = new ImageIcon("C:/Users/Ton/Searches/Downloads/Desktop/Unip/4 semestre/ALPOO/12_set_2012/Imagens/Bauru_2.gif");
+		Im4 = new ImageIcon("C:/Users/Ton/Searches/Downloads/Desktop/Unip/4 semestre/ALPOO/12_set_2012/Imagens/Egg_2.gif");
+		Im5 = new ImageIcon("C:/Users/Ton/Searches/Downloads/Desktop/Unip/4 semestre/ALPOO/12_set_2012/Imagens/Calabrasa_2.gif");
+		Im6 = new ImageIcon("C:/Users/Ton/Searches/Downloads/Desktop/Unip/4 semestre/ALPOO/12_set_2012/Imagens/Salada_2.gif");
+		Lx1 = new JLabel(Im1);
+		Lx2 = new JLabel(Im2);		
+		Lx3 = new JLabel(Im3);		
+		Lx4 = new JLabel(Im4);	
+		Lx5 = new JLabel(Im5);		
+		Lx6 = new JLabel(Im6);
+		
+		P1 = new JPanel();
+		P1.setBackground(Color.red);
+		P1.setLayout(new BorderLayout(5,5));
+		P1.add(Lx6,BorderLayout.CENTER);
+		
+		P2 = new JPanel();
+		P2.setBackground(new Color(96,207,255));
+		P2.setLayout(new BorderLayout(5,5));
+		P2.add(Lx1,BorderLayout.CENTER);
+		
+		P3 = new JPanel();
+		P3.setBackground(new Color(96,207,255));
+		P3.setLayout(new BorderLayout(5,5));
+		P3.add(Lx3,BorderLayout.CENTER);
+		
+		P4 = new JPanel();
+		P4.setBackground(new Color(149,154,218));
+		P4.setLayout(new BorderLayout(5,5));
+		P4.add(Lx4,BorderLayout.CENTER);
+		
+		P5 = new JPanel();
+		P5.setBackground(new Color(96,207,207));
+		P5.setLayout(new BorderLayout(5,5));
+		P5.add(Lx5,BorderLayout.CENTER);
+		
+		P6 = new JPanel();
+		P6.setBackground(new Color(96,207,207));
+		P6.setLayout(new BorderLayout(5,5));
+		P6.add(Lx2,BorderLayout.CENTER);
+		
+		JTabbedPane TP = new JTabbedPane();	
+		TP.setBackground(Color.orange);
+		TP.setForeground(Color.black);
+		TP.setBorder(BorderFactory.createBevelBorder(1,Color.red,Color.white));
+		TP.addTab("Hot-Dog",P2);
+		TP.addTab("Churrasco",P6);
+		TP.addTab("Bauru",P3);
+		TP.addTab("X-Egg",P4);
+		TP.addTab("Calabresa", P5);
+		TP.addTab("X-Salada",P1);
+		
+		getContentPane().add(TP);
+	}
+	public static void main ( String arg[]) {
+		new LC_6().setVisible(true);
+	}
+}
