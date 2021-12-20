@@ -1,0 +1,22 @@
+public class Tv {
+	int  tamanho;
+	int  canal;
+	boolean  ligada;
+	public  Tv(){
+		}
+	public void dadosTv(int t,int c,boolean l){
+		tamanho=t;
+		canal=c;
+		ligada=l;
+		System.out.println("Minha Tv tem "+t+"polegadas");
+		if(ligada==true)
+			System.out.println("Minha Tv esta ligada e sintonizada no canal"+c);
+		else
+			System.out.println("MinhA tV ESTA DESLIGADA");
+	}
+	public static void main (String[] args){
+		Tv minhaTv=new Tv();
+		minhaTv.dadosTv(42,81,true);
+	}
+
+}

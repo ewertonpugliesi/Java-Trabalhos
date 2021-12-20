@@ -1,0 +1,10 @@
+
+public class AloMundo 
+{
+public static void main (String[]args)
+{
+System.out.println("Alo Mundo Java!");
+System.out.println("Aqui estou eu!");
+}
+}
+

@@ -1,0 +1,19 @@
+public class Extracondicionais {
+	public static void main(String[]args){
+		Condicionais meuvalor=new Condicionais(125);
+		double valor1=120;
+		double valor2=125;
+		if (meuvalor.igualA(valor1))
+			System.out.println("Os valores "+meuvalor+" e"+valor1+" são iguais");
+		if (meuvalor.igualA(valor1,valor2))
+			System.out.println("os valores "+meuvalor+" e"+valor2+" e "+valor1+" são iguais");
+		if (meuvalor.maiorQue(valor1))
+			System.out.println("O valor "+meuvalor+" é maior que o valor "+valor1);
+		if (meuvalor.maiorQue(valor1,valor2))
+			System.out.println("O valor "+meuvalor+" é maior que o valor"+valor1+" e "+valor2);
+			if (meuvalor.menorQue(valor1))
+				System.out.println("O valor "+meuvalor+" é menor que o valor"+valor1);
+			if (meuvalor.menorQue(valor1,valor2))
+				System.out.println("O valor"+meuvalor+" é menor que os valores "+valor1+" e "+valor2);
+	}
+	}

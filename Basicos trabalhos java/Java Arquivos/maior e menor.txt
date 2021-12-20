@@ -1,0 +1,59 @@
+import javax.swing.JOptionPane;
+public class valoresSwitch {
+	private int valor1,valor2,valor3,valor4;
+	public static void main(String[]args){
+	String ent=JOptionPane.showInputDialog(null,"Digite um numero");
+	int v1=Integer.parseInt(ent);
+	String ent2=JOptionPane.showInputDialog(null,"Entre com o segundo numero");
+	int v2=Integer.parseInt(ent2);
+    String ent3=JOptionPane.showInputDialog(null,"Entre com o terceiro numero");
+    int v3=Integer.parseInt(ent3);
+   String ent4=JOptionPane.showInputDialog(null,"Entre com o quarto numero");
+   int v4=Integer.parseInt(ent4);
+    if(v1==v2 && v2==v3 && v3==v4)
+			JOptionPane.showInputDialog(null,"Os valores são iguais");
+    else
+		if(v1>v2 && v2>v3 && v3>v4)
+			JOptionPane.showInputDialog(null,"O v1 é o maior e o menor é o v4");
+		else
+		if(v2>v3 && v3>v4 && v4>v1)
+			JOptionPane.showInputDialog(null,"O v2 é o maior e o v1 é o menor ");
+		else
+			if(v3>v4 && v4>v1 && v1>v2)
+			JOptionPane.showInputDialog(null,"O v3 é o maior e o v2 é o menor");
+			else
+			if(v4>v1 && v1>v2 && v2>v3)
+			JOptionPane.showInputDialog(null,"O v4 é o maior é o menor é o v3");
+			else
+			if(v1>v3 && v3>v4 && v4>v2)
+			JOptionPane.showInputDialog(null,"O maior eo v1 e o menor v2");
+			else
+			if(v1>v2 && v2>v4 && v4>v3)
+			JOptionPane.showInputDialog(null,"v1 e o maior e o v3 e o menor");
+			else
+			if(v2>v1 && v1>v3 && v3>v4)
+			JOptionPane.showInputDialog(null,"v2 e o maior e o menor e o v4");
+			else
+			if(v2>v1 && v1>v4 && v4>v3)
+			JOptionPane.showInputDialog(null,"v2 e o maior e o menor e o v3");
+			else
+			if(v2>v3 && v3>v4 && v4>v1)
+			JOptionPane.showInputDialog(null,"v2 e o maior e o menor e o v1");
+			else
+			if(v3>v2 && v2>v4 && v4>v1)
+			JOptionPane.showInputDialog(null,"v3 e o maior e o menor e o v1");
+			else
+			if(v3>v1 && v1>v2 && v2>v4)
+			JOptionPane.showInputDialog(null,"v3 e o maior e o menor e o v4");
+			else
+			if(v4>v3 && v3>v2 && v2>v1)
+			JOptionPane.showInputDialog(null,"v4 e o maior e o menor e o v1");
+			else
+			if(v4>v1 && v1>v3 && v3>v2)
+				JOptionPane.showInputDialog(null,"v4 e o maior e o menor e o v2");
+			else
+				JOptionPane.showInputDialog(null,"Erro");
+	}
+}
+
+

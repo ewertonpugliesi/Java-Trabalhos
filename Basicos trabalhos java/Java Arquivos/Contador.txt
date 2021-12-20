@@ -1,0 +1,27 @@
+import javax.swing.JOptionPane;
+public class Contador {
+public static void main(String[]args){
+	try{
+		System.out.println("==.Contador Regressivo<==");
+		int limite=Integer.parseInt(JOptionPane.showInputDialog("Digite um valor inteiro"));
+		int contador=limite;
+		while(contador>=0){
+			System.out.println(contador);
+			contador--;
+		}
+		System.out.println("-->Fim do Contador Regressivo!");
+		System.out.println("==>Contador Progressivo<==");
+		contador=0;
+		do{
+			System.out.println(contador);
+			contador++;
+		}
+		while(contador<=limite);
+		System.out.println("-->Fim do Contador Progressivo!");
+		}
+	catch(NumberFormatException erro){
+		System.out.println("Não foi digitado um número inteiro válido!\n"+erro.toString());
+		}
+	System.exit(0);
+}
+}

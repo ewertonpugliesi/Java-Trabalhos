@@ -1,0 +1,17 @@
+import javax.swing.JOptionPane;
+public class Valores { 
+	public static void main( String[]args){
+		int n1,n2;
+		String valor1=JOptionPane.showInputDialog(null,"\n Digite n1");
+		n1=Integer.parseInt(valor1);
+		String valor2=JOptionPane.showInputDialog(null,"\n Digite n2");
+		n2=Integer.parseInt(valor2);
+		if(n1==n2)
+		JOptionPane.showMessageDialog(null,"Os Valores são iguais"+n1+","+n2);
+		else
+		if(n1>n2)
+			JOptionPane.showMessageDialog(null,"O Valor n1 é maior que n2","Crescente:"+n2+","+n1, n2, null);
+		else
+			JOptionPane.showMessageDialog(null,"O Valor n1 é menor que n2");
+}
+}

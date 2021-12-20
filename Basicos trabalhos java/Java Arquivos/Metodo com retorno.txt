@@ -1,0 +1,44 @@
+
+public class Metodoscomretorno {
+public static void main(String[]args){
+	System.out.println(somar(2,3));
+	System.out.println(pares(100));
+	System.out.println(diaPorExtenso(3));
+	System.out.println(contaLetrasA("Banana"));
+}
+public static double somar(double a,double b){
+	return a+b;
+}
+public static String pares(int valor){
+	String retorno="";
+	for(int i=0;i<=valor;i=i+2){
+		retorno+=i+" ";
+	}
+	return retorno;
+}
+public static String diaPorExtenso(int dia){
+	String extenso="Domingo";
+	if(dia==2)extenso="Segunda";
+	else
+		if(dia==3)extenso="Terça";
+		else
+			if(dia==4)extenso="Quarta";
+			else
+				if(dia==5)extenso="Quinta";
+				else
+					if(dia==6)extenso="Sexta";
+					else
+						if(dia==7)extenso="Sabado";
+						else
+							extenso="dia desconhecido";
+							return extenso;
+}
+public static int contaLetrasA(String palavra){
+	int quantidade=0;
+	palavra=palavra.toLowerCase();
+	for(int a=0;a<palavra.length();a++){
+	if(palavra.charAt(a)=='A')quantidade++;
+}
+return quantidade;
+}
+}

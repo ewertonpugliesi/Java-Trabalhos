@@ -1,0 +1,33 @@
+
+public class Condicionais {
+private double valor;
+Condicionais (double v){
+}
+public String toString(){
+	return ""+valor;
+}
+public boolean igualA(double v1){
+	if (valor==v1)return true;
+	else return false;
+}
+public boolean igualA(double v1,double v2){
+	if ((valor==v1)&&(valor==2))return true;
+	else return false;
+}
+public boolean maiorQue(double v1){
+	if(valor>1) return true;
+	else return false;
+}
+public boolean maiorQue(double v1,double v2){
+	if ((valor>v1) && (valor>v2))return true;
+	else return false;	
+}
+public boolean menorQue(double v1){
+	if (valor<v1)return true;
+	else return false;
+}
+public boolean menorQue(double v1,double v2){
+	if ((valor<v1)&&(valor<v2))return true;
+	else return false;
+}
+}

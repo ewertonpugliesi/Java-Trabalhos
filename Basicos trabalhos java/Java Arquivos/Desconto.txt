@@ -1,0 +1,33 @@
+import javax.swing.JOptionPane;
+public class Ex01 {
+	static double produto;
+	static double desconto;
+	int codigo;
+	public static void main(String [] args){
+		
+		String Ent = JOptionPane.showInputDialog(null, "Informe o valor do produto: ");
+		double produto = Double.parseDouble(Ent);
+		String Ent2 = JOptionPane.showInputDialog(null, "Informe o código do produto: ");
+		int codigo = Integer.parseInt(Ent2);
+		
+		switch (codigo){
+		case 1: desconto = (produto * 0.95);
+		JOptionPane.showMessageDialog(null, "O valor do produto com desconto é: " +desconto);
+		break;
+		
+		case 2: desconto = (produto * 0.9);
+		JOptionPane.showMessageDialog(null, "O valor do produto com desconto é: " +desconto);
+		break;
+		
+		case 3: desconto = (produto * 0.8);
+		JOptionPane.showMessageDialog(null, "O valor do produto com desconto é: " +desconto);
+		break;
+		
+		case 4: desconto = (produto * 0.6);
+		JOptionPane.showMessageDialog(null, "O valor do produto com desconto é: " +desconto);
+		break;
+		
+		default:JOptionPane.showMessageDialog(null, "O valor do código inserido está errado");
+		}
+	}
+}

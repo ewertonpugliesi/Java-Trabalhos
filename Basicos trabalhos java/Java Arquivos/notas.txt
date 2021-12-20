@@ -1,0 +1,26 @@
+import javax.swing.JOptionPane;
+public class Notas {
+public void Aluno(){
+}
+public void imprimesituação(String n){
+	public static void (String[]args){
+float n1,n2,M;
+Aluno novoAluno=new Aluno();
+	novoAluno.imprimesituação("A Situação é: "+n);
+		String valor1=JOptionPane.showInputDialog(null,"\n Digite n1");
+		n1=Float.parseFloat(valor1);
+		String valor2=JOptionPane.showInputDialog(null,"\n Digite n2");
+		n2=Float.parseFloat(valor2);
+			M=(n1+n2)/2;
+JOptionPane.showInputDialog(null,"A media é: "+M);
+if (M>=7.0)
+	JOptionPane.showInputDialog(null,"Aprovado");
+else
+	if(M<=7.0||M>=3.0)
+		JOptionPane.showInputDialog(null,"Em Exame");
+	else
+		if(M<3.0)
+			JOptionPane.showInputDialog(null,"Reprovado");
+		}
+	}
+}

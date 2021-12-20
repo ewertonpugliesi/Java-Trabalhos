@@ -1,0 +1,10 @@
+import javax.swing.JOptionPane;
+public class multiplos {
+	public static void main(String[]args){
+		int num;
+		for (num=0;num>=0 && num<=130;num++){
+			if(num%13==0);
+			System.out.println(num);
+		}
+	}
+}

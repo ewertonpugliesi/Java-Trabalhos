@@ -1,0 +1,9 @@
+public class Exemplo1 
+{
+public static void escrever()
+	{
+	int  x=10;
+	String nome="valor=";
+	System.out.println(nome+""+x);
+	}
+}

@@ -1,0 +1,12 @@
+import javax.swing.JOptionPane;
+public class Pessoa {
+	Pessoa(){
+	}
+	public void imprimePessoa(String n,int i){
+		JOptionPane.showMessageDialog(null,"\n Meu Nome é "+n+"\n Eu tenho"+i+"anos","Dados de Pessoa",1);
+		}
+	public static void main(String[]args){
+		Pessoa novaPessoa=new Pessoa();
+		novaPessoa.imprimePessoa("Ewerton",30);
+	}
+	}
